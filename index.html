@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        
+        background-image: url('./love-calculator.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  background-size: cover;
+  height:100vh
+    }
+input{
+border-radius: 5px;
+float: right;
+padding-bottom: 5px;
+    margin-right: 100px;
+}
+label{
+    font-size:18px;
+    float: left;
+    padding-bottom: 5px;
+    margin-right: 200px;
+}
+
+.hello{
+    height:200px;
+    width:400px;
+    margin-left:400px;
+    padding: 100px;
+   background-color:rgba(255, 192, 203, 0.747);
+   border-radius: 60px;
+   margin-top: 100px;
+
+}
+button{
+    margin-top: 30px;
+    margin-left: 130px;
+    width:150px;
+    height:50px;
+    border:solid red;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+}
+p{
+    margin:0px;
+    padding:0px;
+}
+
+@media (max-width: 600px) {
+        .hello {
+            height: auto;
+            width: 90%;
+            margin-left: 5%;
+            padding: 20px;
+            background-color: rgba(255, 192, 203, 0.747);
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+        input {
+            width: 80%;
+            margin-right: 0;
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 16px;
+            float: none;
+            margin-right: 0;
+            display: block;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 100px;
+            height: 40px;
+        }
+    }
+
+</style>
+<body>
+<div class="container">
+<h2><center>Love Predictor</center></h2>
+
+<div class="hello">
+<form onsubmit="event.preventDefault(); fun();">
+<label >Enter Your Name</label>
+<input type="text" id="j" minlenght="3" required><br/>
+<label>Enter Your Partner's Name</label>
+<input type="text" minlength="3" required>
+<br/>
+<button  type="submit">Calculate Love</button>
+<h1><p id="demo"></p></h1>
+</form>
+</div>
+</div>
+
+<script src="love.js"></script>
+
+</body>
+</html> 
+
